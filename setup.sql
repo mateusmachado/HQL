@@ -5,7 +5,6 @@ CREATE TABLE employee(
    id INTEGER PRIMARY KEY
  , name VARCHAR(20) NOT NULL
  , salary NUMERIC(15,2) NOT NULL DEFAULT 0)
-;SELECT * FROM employee;
 
 CREATE TABLE address(
    id INTEGER PRIMARY KEY 
@@ -14,7 +13,6 @@ CREATE TABLE address(
  , city VARCHAR(20) DEFAULT NULL
  , FOREIGN KEY (id) REFERENCES employee(id)
 )
-;SELECT * FROM address;
 
 INSERT INTO employee 
 VALUES(1, 'Nina', 100)
